@@ -34,7 +34,7 @@ group by continent
 order by Total_death desc;
 
 -- Highest Death by Continent
-Select continent, max(cast(total_deaths as int)) as Total_death_count
+Select continent, max(cast(total_deaths as unsigned)) as Total_death_count
 Where continent is null
 Group by continent
 Order by Total_death_count desc;
